@@ -8,6 +8,7 @@ import { MainFooterComponent } from './modules/core/shared/components/main-foote
 import { MainNavbarComponent } from './modules/core/shared/components/main-navbar/main-navbar.component';
 import { ComingSoonComponent } from './modules/core/shared/components/coming-soon/coming-soon.component';
 import { NotificationFormComponent } from './modules/core/shared/components/notification-form/notification-form.component';
+import { CopyrightComponent } from './modules/core/shared/components/copyright/copyright.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotificationFormComponent } from './modules/core/shared/components/noti
     MainFooterComponent,
     MainNavbarComponent,
     ComingSoonComponent,
-    NotificationFormComponent
+    NotificationFormComponent,
+    CopyrightComponent
   ],
   imports: [
     BrowserModule,
