@@ -1,0 +1,32 @@
+
+.img-main-section {
+  height: 100%;
+  width: 100%;
+  border: #020053 solid 4px;
+}
+
+.img-right, img-left {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.img-right {
+  top: -30px;
+  left: -30px;
+}
+
+.img-left {
+  top: -30px;
+  right: -30px;
+}
+
+.img-right:hover {
+  transform: translate(30px, 30px);
+  background-color: pink;
+}
+
+.img-left:hover {
+  transform: translate(-30px, 30px);
+  background-color: pink;
+}
