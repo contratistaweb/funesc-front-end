@@ -1,0 +1,31 @@
+<section class="container py-5 my-5 item" *ngFor="let section of sections; let i = index">
+
+
+
+    <div class="row d-flex justify-content-md-between">
+
+      <div class="row col-12 col-md-5 my-3 my-md-auto px-0"
+           [ngClass]="i%2===0?'order-0 float-start':'order-1 me-0 float-end'">
+        <div class="col-10 mx-auto" [ngClass]="i%2===0?'':'me-0'">
+          <h2 class="mb-3 display-4">{{section.title| uppercase}}</h2>
+          <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis esse id illum inventore
+            laborum minus neque obcaecati perferendis quis! Asperiores at corporis in ipsam libero non repudiandae rerum
+            voluptas? Magnam.</p>
+          <div class="row d-flex justify-content-start align-content-center my-3">
+            <a class="btn btn-dark rounded-pill col-auto px-4">{{'ver mas' | uppercase}}</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 my-3 my-md-auto p-3" [ngClass]="i%2===0?'order-1 float-end':'order-0 float-start'">
+        <div class="img-main-section d-flex justify-content-center align-content-center p-0"
+             [ngClass]="i%2===0?'me-0':''">
+          <img class="img-fluid position-relative" [ngClass]="i%2===0?'img-right':'img-right'"
+               [src]="section.image"
+               [alt]="section.title">
+        </div>
+      </div>
+
+    </div>
+</section>
+

@@ -1,6 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+$blue-regular: #064684;
+$blue-dark: #020053;
+$blue-medium: #6eaed4;
+$blue-light: #d6e7f3;
+
+$white: #fff;
+$gray: #707070;
+
+$dark: $blue-dark;
+$primary: $blue-regular;
+$info: $blue-medium;
+$secondary: $blue-light;
+$danger: $white;
+$light: $white;
+@import "node_modules/bootstrap/scss/bootstrap";
+
 .full-height{
   min-height: 100vh;
   height: auto;
   margin: 0;
 }
+

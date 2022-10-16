@@ -6,12 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./copyright.component.scss']
 })
 export class CopyrightComponent implements OnInit {
-  date: number = 0;
+  year: number = new Date(Date.now()).getFullYear();
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.date = new Date(Date.now()).getFullYear();
-  }
+  ngOnInit(): void { }
 
 }

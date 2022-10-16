@@ -1,1 +1,51 @@
-<p>main-navbar works!</p>
+<nav class="navbar navbar-expand-lg bg-transparent">
+  <div class="container py-3 ">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mx-0" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ms-0 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link rounded-0 active" aria-current="page" [routerLink]="['/']" [routerLinkActive]="'active'">INICIO</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link rounded-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PORTAL ACADEMICO
+          </a>
+          <ul class="dropdown-menu border-0 py-0">
+            <li><a class="dropdown-item" [routerLinkActive]="'active'">CURSOS</a></li>
+            <li><a class="dropdown-item" [routerLinkActive]="'active'">DIPLOMADOS</a></li>
+            <li><a class="dropdown-item" [routerLinkActive]="'active'">TALLERES</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link rounded-0" [routerLinkActive]="'active'">SOBRE NOSOTROS</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link rounded-0" [routerLinkActive]="'active'">CONTACTENOS</a>
+        </li>
+      </ul>
+
+
+      <div class="ms-auto me-md-3 mb-2 d-flex justify-content-md-end py-auto">
+        <form class="d-flex ms-md-auto py-auto" role="search" >
+          <input class="form-control me-md-2" type="search" placeholder="Search" aria-label="Search" *ngIf="searchShow">
+          <button class="btn btn-secondary me-md-2" type="submit" *ngIf="searchShow">Buscar</button>
+          <i class="bi fs-4" [ngClass]="searchShow?'bi-x-lg':'bi-search'" (click)="changeSearchShow()"></i>
+        </form>
+
+      </div>
+        <div class="row d-flex col-12 col-md-auto ms-1 me-0">
+          <a class="col-auto btn btn-primary rounded-pill">
+            {{'iniciar sesion'| uppercase}}
+          </a>
+        </div>
+
+    </div>
+  </div>
+</nav>

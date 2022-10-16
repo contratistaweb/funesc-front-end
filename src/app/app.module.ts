@@ -9,6 +9,8 @@ import { MainNavbarComponent } from './modules/core/shared/components/main-navba
 import { ComingSoonComponent } from './modules/core/shared/components/coming-soon/coming-soon.component';
 import { NotificationFormComponent } from './modules/core/shared/components/notification-form/notification-form.component';
 import { CopyrightComponent } from './modules/core/shared/components/copyright/copyright.component';
+import {CoreModule} from "./modules/core/core.module";
+import {NgsRevealModule} from "ngx-scrollreveal";
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CopyrightComponent } from './modules/core/shared/components/copyright/c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgsRevealModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
